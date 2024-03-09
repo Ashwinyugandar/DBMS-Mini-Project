@@ -1,8 +1,8 @@
-const loginForm = document.getElementById("login-form");
+// const loginForm = document.getElementById("login-form");
 
-loginForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
+// loginForm.addEventListener("submit", (event) => {
+//     event.preventDefault();
+function loginSuccess() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
@@ -12,4 +12,4 @@ loginForm.addEventListener("submit", (event) => {
     } else {
         alert("Invalid username or password.");
     }
-});
+}

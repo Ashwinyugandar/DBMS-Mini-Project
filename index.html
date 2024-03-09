@@ -1,114 +1,26 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Criminal Information</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 15px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
-</head>
-<body>
-  <h1>Criminal Information</h1>
-  <button onclick="sortTable()">Sort by Crime Type</button>
-  <table id="criminals">
-    <tr>
-      <th>Criminal Name</th>
-      <th>Criminal NO</th>
-      <th>NickName</th>
-      <th>Crime Type</th>
-      <th>Date of Crime</th>
-      <th>Address</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Osama</td>
-      <td>101</td>
-      <td>laden</td>
-      <td>terrorist</td>
-      <td>01/12/1998</td>
-      <td>SA</td>
-      <td>50</td>
-    </tr>
-  </table>
-
-  <script>
-    function sortTable() {
-      var table, rows, switching, i, x, y, shouldSwitch;
-      table = document.getElementById("criminals");
-      switching = true;
-      /*Make a loop that will continue until
-      no switching has been done:*/
-      while (switching) {
-        //Start by saying: no switching is done:
-        switching = false;
-        rows = table.rows;
-        /*Loop through all table rows (except the
-        first, which contains table headers):*/
-        for (i = 1; i < (rows.length - 1); i++) {
-          //Start by saying there should be no switching:
-          shouldSwitch = false;
-          /*Get the two elements you want to compare,
-          one from current row and one from the next:*/
-          x = rows[i].getElementsByTagName("TD")[2];
-          y = rows[i + 1].getElementsByTagName("TD")[2];
-          //Check if the two rows should switch place:
-          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-            //If so, mark as a switch and break the loop:
-            shouldSwitch = true;
-            break;
-          }
-        }
-        if (shouldSwitch) {
-          /*If a switch has been marked, make the switch
-          and mark that a switch has been done:*/
-          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-          switching = true;
-        }
-      }
-    }
-  </script>
-
-</body>
-</html-->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Criminal Database</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Criminal Database</h1>
-  <input type="text" id="search" placeholder="Search by name...">
-  <button onclick="searchCriminals()">Search</button>
-  <table id="criminals">
-    <tr>
-      <th>Name</th>
-      <th>Crime</th>
-      <th>Sentence</th>
-    </tr>
-    <tr>
-      <td>John Doe</td>
-      <td>Murder</td>
-      <td>Life in prison</td>
-    </tr>
-    <tr>
-      <td>Jane Doe</td>
-      <td>Theft</td>
-      <td>5 years in prison</td>
-    </tr>
-    <!-- Add more criminals here -->
-  </table>
-  <script src="script.js"></script>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="button" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,13 +1,15 @@
-function searchCriminals() {
-    var input = document.getElementById("search").value;
-    input = input.toLowerCase();
-    var x = document.getElementsByTagName("tr");
-    for (i = 1; i < x.length; i++) {
-      if (!x[i].innerHTML.toLowerCase().includes(input)) {
-          x[i].style.display="none";
-      }
-      else {
-          x[i].style.display="list-item";
-      }
+const loginForm = document.getElementById("login-form");
+
+loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Replace the following condition with your own validation logic
+    if (username === "admin" && password === "password") {
+        window.location.href = "subpage.html";
+    } else {
+        alert("Invalid username or password.");
     }
-  }
+});

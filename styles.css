@@ -1,0 +1,38 @@
+body {
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1557081998-05f784dcdd41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    align-items: center;
+    color: #f0f0f0;
+    width:50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #ffffff00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

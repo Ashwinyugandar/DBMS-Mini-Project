@@ -1,8 +1,12 @@
 body {
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-image: url(https://images.unsplash.com/photo-1557081998-05f784dcdd41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
@@ -10,7 +14,7 @@ body {
 .login-container {
     align-items: center;
     color: #f0f0f0;
-    width:50%;
+    width: 50%;
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #ffffff00;

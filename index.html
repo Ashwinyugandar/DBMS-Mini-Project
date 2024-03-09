@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Criminal Information</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 15px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Criminal Information</h1>
+  <button onclick="sortTable()">Sort by Crime Type</button>
+  <table id="criminals">
+    <tr>
+      <th>Criminal Name</th>
+      <th>Criminal NO</th>
+      <th>NickName</th>
+      <th>Crime Type</th>
+      <th>Date of Crime</th>
+      <th>Address</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Osama</td>
+      <td>101</td>
+      <td>laden</td>
+      <td>terrorist</td>
+      <td>01/12/1998</td>
+      <td>SA</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+  <script>
+    function sortTable() {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("criminals");
+      switching = true;
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //Start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //Start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[2];
+          y = rows[i + 1].getElementsByTagName("TD")[2];
+          //Check if the two rows should switch place:
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            //If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+    }
+  </script>
+
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Criminal Database</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Criminal Database</h1>
+  <input type="text" id="search" placeholder="Search by name...">
+  <button onclick="searchCriminals()">Search</button>
+  <table id="criminals">
+    <tr>
+      <th>Name</th>
+      <th>Crime</th>
+      <th>Sentence</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>Murder</td>
+      <td>Life in prison</td>
+    </tr>
+    <tr>
+      <td>Jane Doe</td>
+      <td>Theft</td>
+      <td>5 years in prison</td>
+    </tr>
+    <!-- Add more criminals here -->
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>

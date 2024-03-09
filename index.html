@@ -17,10 +17,17 @@
     <div class="login-container">
         <h1>Login</h1>
         <form id="login-form" method="post">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
+            <div><label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div><label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <input type="checkbox" id="showPassword" onchange="togglePassword()">
+                <!-- Checkbox for show/hide password -->
+                <label for="showPassword">Show Password</label>
+            </div><br>
             <button type="button" class="btn btn-primary" onclick="loginSuccess()">Login</button>
         </form>
     </div>

@@ -30,6 +30,8 @@ input[type="password"] {
 
 button {
     width: 100%;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -40,3 +42,9 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* .btn btn-primary {
+    align-items: center;
+    justify-content: center;
+    width: 50%
+} */

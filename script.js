@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", (event) => {
 
     // Replace the following condition with your own validation logic
     if (username === "admin" && password === "password") {
-        window.location.href = "subpage.html";
+        window.location.href = "home.html";
     } else {
         alert("Invalid username or password.");
     }

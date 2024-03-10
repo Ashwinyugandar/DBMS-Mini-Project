@@ -31,7 +31,7 @@ include("connection.php");
                 <!-- Checkbox for show/hide password -->
                 <label for="showPassword">Show Password</label>
             </div><br>
-            <input type="submit" name="submit" class="btn btn-primary" value="Login"></input>
+            <button type="submit" name="submit" class="btn btn-primary">Login</button>
         </form>
     </div>
     <script>function togglePassword() {

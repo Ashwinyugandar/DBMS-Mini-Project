@@ -6,8 +6,8 @@ include("../connection.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Page</title>
-    <link rel="stylesheet" href="staff.css">
+    <title>Active Cases</title>
+    <link rel="stylesheet" href="../staff/staff.css">
 </head>
 <body>
     <div>
@@ -26,20 +26,22 @@ include("../connection.php");
 </div>
 <div class="php">
 <?php
-$sql = "SELECT * FROM Staff";
+$sql = "SELECT * FROM Cases where Case_status='Active'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<table border='1'>";
-    echo "<tr><th>Staff ID</th><th>Staff Name</th><th>Designation</th><th>Date of Joining</th></tr>";
+    echo "<tr><th>Case ID</th><th>Case Type</th><th>Case Status</th><th>Criminal name</th><th>Date of crime</th><th>Staff ID</th></tr>";
 
     // Output data of each row
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
+        echo "<td>" . $row["Case_id"] . "</td>";
+        echo "<td>" . $row["Case_type"] . "</td>";
+        echo "<td>" . $row["Case_status"] . "</td>";
+        echo "<td>" . $row["Criminal_name"] . "</td>";
+        echo "<td>" . $row["Date_of_crime"] . "</td>";
         echo "<td>" . $row["Staff_id"] . "</td>";
-        echo "<td>" . $row["Staff_name"] . "</td>";
-        echo "<td>" . $row["Designation"] . "</td>";
-        echo "<td>" . $row["DOJ"] . "</td>";
         echo "</tr>";
     }
 

@@ -16,8 +16,20 @@ header {
   background-color: rgba(0, 0, 0, 0);
 }
 
+/* /* .background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Adjust as needed */
+/* background-image: url(https://www.lawyersgunsmoneyblog.com/wp-content/uploads/2024/01/AAAAQeEioY_RofVmU4abKR_c5OCAYlViS-0SEv1Qvr-n1VJ6xS-Pu8l0-vej2hI2lWYR91RZnVxQlvnwgBiNc-FytVOyXanEx2POyLrNiCbusBtmVckgztY8ya-LR6wrt8UW7ON732kBpO_GESyWZSlWdsV1xFM.jpg?format=webp&width=872&height=460);
+background-size: cover;
+background-position: center;
+} */
+
+
+
 body {
-  background-image: url("../images/homebg1.jpg");
+  background-image: url(https://www.lawyersgunsmoneyblog.com/wp-content/uploads/2024/01/AAAAQeEioY_RofVmU4abKR_c5OCAYlViS-0SEv1Qvr-n1VJ6xS-Pu8l0-vej2hI2lWYR91RZnVxQlvnwgBiNc-FytVOyXanEx2POyLrNiCbusBtmVckgztY8ya-LR6wrt8UW7ON732kBpO_GESyWZSlWdsV1xFM.jpg?format=webp&width=872&height=460);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -58,8 +70,7 @@ body {
   padding: 20px 20px;
 }
 
-#nav:hover{
+#nav:hover {
   background-color: #c5c4bc;
-  border:0px;
+  border: 0px;
 }
-

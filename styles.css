@@ -16,8 +16,9 @@ body {
     color: #f0f0f0;
     width: 50%;
     border: 1px solid #ccc;
+    border-radius: 15px;
     padding: 20px;
-    background-color: #6b6363b9;
+    background-color: #6b636370;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

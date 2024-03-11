@@ -10,7 +10,7 @@
 	    $count=mysqli_num_rows($result);
 
 	    if($count == 1){
-		    header("Location:home.php");
+		    header("Location:home\home.php");
 	    }else{
 		    echo '<script>window.location.href="index.php";
 				alert("Login failed");

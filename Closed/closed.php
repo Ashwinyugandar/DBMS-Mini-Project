@@ -6,15 +6,15 @@ include("../connection.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closed Cases</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="../staff/staff.css">
 </head>
-<body>
-    <div>
+<body >
+    <div class="homepage">
     <header>
 
         <h2>Criminal Database Management</h2> <br>
-        <a class="out" href="../index.php">Logout</a>
+      <a class="out" href="../index.php">Logout</a>
     </header>
     <div class="nav">
     <a id="nav" class="home" href="../home/home.php">Home</a>
@@ -22,8 +22,8 @@ include("../connection.php");
         <a id="nav" class="active_cases" href="../Active/active.php">Active Cases</a>
         <a id="nav" class="closed_cases" href="../Closed/closed.php">Closed cases</a>
         <a id="nav" class="add_case" href="../Cases/Addcase.php">Add New Case</a>
-</div>
-</div>
+     </div>
+
 <div class="php">
 <?php
 $sql = "SELECT * FROM Cases where Case_status='Closed'";

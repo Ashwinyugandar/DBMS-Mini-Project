@@ -10,7 +10,7 @@
     <title>Add a case</title>
 </head>
 <body>
-<div>
+<div class="homepage">
     <header>
 
         <h2>Criminal Database Management</h2> <br>
@@ -23,22 +23,24 @@
         <a id="nav" class="closed_cases" href="../Closed/closed.php">Closed cases</a>
         <a id="nav" class="add_case" href="../Cases/Addcase.php">Add New Case</a>
 </div>
+<div class="php">
+    <table>
     <form action="insertToDB.php" method="POST" class="form">
-        <div>
-        <div><label for="casetype">Type of case</label>
-        <input type="text" name="casetype"></div>
-        <div><label for="casestatus">Case Status</label>
-        <select name="casestatus">
+        <tr><td><label for="casetype">Type of case</label></td>
+        <td><input type="text" name="casetype" required></td></tr>
+        <tr><td><label for="casestatus">Case Status</label></td>
+        <td><select name="casestatus">
             <option value="Active">Active</option>
-        </select></div>
-        <div><label for="criminal">Name of criminal</label>
-        <input type="text" name="criminal"></div>
-        <div><label for="dateofcrime">Date of crime (dd/mm/yyyy)</label>
-        <input type="text" name="dateofcrime"></div>
-        <div><label for="staffid">Staff Id</label>
-        <input type="text" name="staffid"></div>
-        <div><button type="submit" name="submit">Submit</button></div>
-        </div>
+        </select></td></tr>
+        <tr><td><label for="criminal">Name of criminal</label></td>
+        <td><input type="text" name="criminal" required></td></tr>
+        <tr><td><label for="dateofcrime">Date of crime (dd/mm/yyyy)</label></td>
+        <td><input type="text" name="dateofcrime" required></td></tr>
+        <tr><td><label for="staffid">Staff Id</label></td>
+        <td><input type="text" name="staffid" required></td></tr>
+        <tr><td><button type="submit" name="submit" class="submit">Submit</button></td></tr>
     </form>
+</table>
+</div>
 </body>
 </html>

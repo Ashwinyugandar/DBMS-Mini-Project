@@ -26,18 +26,18 @@
 <div class="php">
     <table>
     <form action="insertToDB.php" method="POST" class="form">
-        <tr><td><label for="casetype">Type of case</label></td>
-        <td><input type="text" name="casetype" required></td></tr>
-        <tr><td><label for="casestatus">Case Status</label></td>
-        <td><select name="casestatus">
+        <tr><td class="label"><label for="casetype">Type of case</label></td>
+        <td><input class="input" type="text" name="casetype" required></td></tr>
+        <tr><td class="label"><label for="casestatus">Case Status</label></td>
+        <td><select class="input"  name="casestatus">
             <option value="Active">Active</option>
         </select></td></tr>
-        <tr><td><label for="criminal">Name of criminal</label></td>
-        <td><input type="text" name="criminal" required></td></tr>
-        <tr><td><label for="dateofcrime">Date of crime (dd/mm/yyyy)</label></td>
-        <td><input type="text" name="dateofcrime" required></td></tr>
-        <tr><td><label for="staffid">Staff Id</label></td>
-        <td><input type="text" name="staffid" required></td></tr>
+        <tr><td class="label"><label for="criminal">Name of criminal</label></td>
+        <td><input class="input" type="text" name="criminal" required></td></tr>
+        <tr><td class="label"><label for="dateofcrime">Date of crime</label></td>
+        <td><input class="input" type="date" name="dateofcrime" required></td></tr>
+        <tr><td class="label"><label for="staffid">Staff Id</label></td>
+        <td><input class="input" type="text" name="staffid" required></td></tr>
         <tr><td><button type="submit" name="submit" class="submit">Submit</button></td></tr>
     </form>
 </table>

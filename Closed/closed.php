@@ -6,14 +6,14 @@ include("../connection.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="../staff/staff.css">
+    <title>Closed Cases-Crimson Vault</title>
+    <link rel="stylesheet" href="../staff/staffs.css">
 </head>
 <body >
     <div class="homepage">
     <header>
 
-        <h2>Criminal Database Management</h2> <br>
+        <h2>Crimson Vault</h2> <br>
       <a class="out" href="../index.php">Logout</a>
     </header>
     <div class="nav">

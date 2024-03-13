@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+h2 {
+  font-size: 4em;
+  font-family: "Madimi One", sans-serif;
+  color: white; 
+  width: 100%; 
+  margin-top: 10px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,20 +24,13 @@
     text-align: center;
   }
   
-  header h2 {
-    font-size: 4em;
-    color: #ffffff; 
-    margin: 0;
-    width: 100%; 
-  }
-  
   .out {
       color: white;
       text-align: right;
       text-decoration: none;
       font-size: 1.2em;
       padding: 0.5em 1em; 
-      background-color: #770012;
+      background-color: #610000;
       border: .7px solid white; 
       border-radius: 5px; 
       transition: background-color 0.3s ease; 
@@ -74,35 +77,23 @@
     text-decoration: none;
     padding: 20px 20px;
     color: rgb(255, 255, 255);
-    
   }
   
   #nav:hover {
     background-color:#2782ac ;
-    border: 0px;
+    border: 2px solid #0d3e55 ;
   }
-
-.php {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 15px;
-      font-weight: bolder;
-      padding: 20px;
-      background-color: #00000050;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
-}
-
-tr,td,th{
-    padding: 10px;
-}
-.php,
-table,tr,th,td{
-    font-size: 2.2rem;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+  .para{
+    margin-top: 15px;
     text-align: center;
-}
-
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #00000050;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+    font-size: 25px;
+    line-height: 40px;
+    color: #ffffff;
+    word-spacing: 1.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

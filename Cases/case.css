@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+h2 {
+  font-size: 4em;
+  font-family: "Madimi One", sans-serif;
+  color: #ffffff; 
+  margin-top: 10px;
+  width: 100%; 
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,13 +21,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-}
-
-header h2 {
-  font-size: 4em;
-  color: #ffffff;
-  margin: 0;
-  width: 100%;
 }
 
 .out {
@@ -79,7 +81,7 @@ body {
 
 #nav:hover {
   background-color: #2782ac;
-  border: 0px;
+  border: 2px solid #0d3e55 ;
 }
 
 .submit {
@@ -117,7 +119,7 @@ body {
 tr,
 td,
 th {
-  padding: 10px;
+  padding: 5px;
 }
 
 .php,
@@ -137,4 +139,7 @@ td {
 
 .input {
   text-align: left;
+}
+.submit{
+  margin-left: 230px;
 }

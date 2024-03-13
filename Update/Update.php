@@ -6,14 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Update Case-Crimson Vault</title>
     <link rel="stylesheet" href="Update.css">
 </head>
 <body >
     <div class="homepage">
     <header>
 
-        <h2>Criminal Database Management</h2> <br>
+        <h2>Crimson Vault</h2> <br>
       <a class="out" href="../index.php">Logout</a>
     </header>
     <div class="nav">
@@ -50,16 +50,18 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 ?>
-<form action="updatedb.php" method="POST">
-    <label for="caseid">Case Id</label>
-    <input type="number" name="caseid" maxlength="20" required>
-    <label for="casestatus">Case status</label>
-    <select name="casestatus">
+<table>
+<form action="updatedb.php" method="POST" class="form">
+   <tr><td> <label for="caseid" class="lab">Case Id</label></td>
+    <td><input type="number" class="inp" name="caseid" maxlength="20" required></td></tr>
+    <tr><td><label for="casestatus" class="lab">Case status</label></td>
+    <td><select name="casestatus" class="inp">
         <option value="Active">Active</option>
         <option value="Closed">Closed</option>
-    </select>
-    <button name="submit">Update</button>
+    </select></td></tr> 
+    <tr><td colspan=2><button name="submit" class="but">Update</button></td></tr>
 </form>
+</table>
 </div>
 </body>
 </html>

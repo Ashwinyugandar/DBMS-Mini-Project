@@ -6,14 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cases.css">
-    <title>Add a case</title>
+    <link rel="stylesheet" href="case.css">
+    <title>Add a Case-Crimson Vault</title>
 </head>
 <body>
 <div class="homepage">
     <header>
 
-        <h2>Criminal Database Management</h2> <br>
+        <h2>Crimson Vault</h2> <br>
         <a class="out" href="../index.php">Logout</a>
     </header>
     <div class="nav">
@@ -27,19 +27,19 @@
 <div class="php">
     <table>
     <form action="insertToDB.php" method="POST" class="form">
-        <tr><td class="label"><label for="casetype">Type of case</label></td>
+        <tr><td class="label"><label for="casetype">Type of case:</label></td>
         <td><input class="input" type="text" name="casetype" required></td></tr>
-        <tr><td class="label"><label for="casestatus">Case Status</label></td>
+        <tr><td class="label"><label for="casestatus">Case Status:</label></td>
         <td><select class="input"  name="casestatus">
             <option value="Active">Active</option>
         </select></td></tr>
-        <tr><td class="label"><label for="criminal">Name of criminal</label></td>
+        <tr><td class="label"><label for="criminal">Name of criminal:</label></td>
         <td><input class="input" type="text" name="criminal" required></td></tr>
-        <tr><td class="label"><label for="dateofcrime">Date of crime</label></td>
+        <tr><td class="label"><label for="dateofcrime">Date of crime:</label></td>
         <td><input class="input" type="date" name="dateofcrime" required></td></tr>
-        <tr><td class="label"><label for="staffid">Staff Id</label></td>
+        <tr><td class="label"><label for="staffid">Staff Id:</label></td>
         <td><input class="input" type="text" name="staffid" required></td></tr>
-        <tr><td><button type="submit" name="submit" class="submit">Submit</button></td></tr>
+        <tr><td colspan=2><button type="submit" name="submit" class="submit">Submit</button></td></tr>
     </form>
 </table>
 </div>

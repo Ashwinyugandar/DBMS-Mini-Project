@@ -20,7 +20,7 @@ include("connection.php");
     <div class="login-container">
         <h1>Login</h1>
         <form id="login-form" method="POST" action="login.php">
-            <div><label for="username">Username:</label>
+            <div><label for="username">User ID:</label>
                 <input type="text" id="username" name="username" required>
             </div>
             <div><label for="password">Password:</label><br>

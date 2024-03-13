@@ -1,13 +1,10 @@
-<?php
-include("../connection.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="staff.css">
+    <link rel="stylesheet" href="Update.css">
 </head>
 <body >
     <div class="homepage">
@@ -24,31 +21,6 @@ include("../connection.php");
         <a id="nav" class="closed_cases" href="../Update/Update.php">Update case</a>
         <a id="nav" class="add_case" href="../Cases/Addcase.php">Add New Case</a>
      </div>
-     
-<div class="php">
-<?php
-$sql = "SELECT * FROM Staff";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    echo "<table border='1'>";
-    echo "<tr><th>Staff ID</th><th>Staff Name</th><th>Designation</th><th>Date of Joining</th></tr>";
-
-    // Output data of each row
-    while ($row = $result->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $row["Staff_id"] . "</td>";
-        echo "<td>" . $row["Staff_name"] . "</td>";
-        echo "<td>" . $row["Designation"] . "</td>";
-        echo "<td>" . $row["DOJ"] . "</td>";
-        echo "</tr>";
-    }
-
-    echo "</table>";
-} else {
-    echo "0 results";
-}
-?>
 </div>
 </body>
 </html>

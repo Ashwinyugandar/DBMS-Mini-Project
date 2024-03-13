@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+
+  h2 {
+    font-size: 4em;
+    font-family: "Madimi One", sans-serif;
+    color: #ffffff; 
+    margin: 0;
+    width: 100%; 
+  }
+  
+  .out {
+      color: white;
+      text-align: right;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 0.5em 1em; 
+      background-color: #610000;
+      border: .7px solid white; 
+      border-radius: 5px; 
+      transition: background-color 0.3s ease; 
+      position: absolute;
+      top: 80px;
+      right: 40px;
+  }
+  
+  .out:hover {
+      background-color: #ff1034;
+      
+  }
+  
+   .homepage {       /*  for glossy look */
+       align-items: center;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      font-weight: bolder;
+      padding: 20px;
+      background-color: #00000050;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+  }
+  
+  body {
+    background-image: url(https://images.unsplash.com/photo-1633454531363-fff44d0b9ac2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+  }
+  
+  .nav {
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5em;
+  
+  }
+  
+  #nav {
+    border: 0px;
+    border-radius: 20px;
+    background-color:#0d3e55 ;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  #nav:hover {
+    background-color:#2782ac ;
+    border: 0px;
+  }

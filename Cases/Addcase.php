@@ -21,6 +21,7 @@
         <a id="nav" class="staff" href="../staff/staff.php">Staff List</a>
         <a id="nav" class="active_cases" href="../Active/active.php">Active Cases</a>
         <a id="nav" class="closed_cases" href="../Closed/closed.php">Closed cases</a>
+        <a id="nav" class="closed_cases" href="../Update/Update.php">Update case</a>
         <a id="nav" class="add_case" href="../Cases/Addcase.php">Add New Case</a>
 </div>
 <div class="php">

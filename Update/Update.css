@@ -102,8 +102,9 @@ tr,td,th{
 }
 .php,
 table,tr,th,td{
+    text-decoration: none !important;
     font-size: 1.5rem;
-    color: white;
+    color: rgb(255, 0, 0);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
@@ -120,4 +121,9 @@ table,tr,th,td{
 .but{
   padding: 7px;
   font-size: x-large;
+}
+
+.edt{
+  text-decoration: none;
+  color: white;
 }

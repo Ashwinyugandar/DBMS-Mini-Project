@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
 
     // Execute the query
     if (mysqli_query($conn, $sql)) {
-        echo '<script>window.location.href="Update.php";
+        echo '<script>window.location.href="Upd.php";
               alert("Case updated successfully");
               </script>';
     } else {

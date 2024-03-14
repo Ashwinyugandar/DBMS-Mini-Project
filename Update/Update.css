@@ -102,9 +102,9 @@ tr,td,th{
 }
 .php,
 table,tr,th,td{
-    text-decoration: none !important;
+    /* text-decoration: none !important; */
     font-size: 1.5rem;
-    color: rgb(255, 0, 0);
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }

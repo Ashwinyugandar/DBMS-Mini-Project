@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Case-Crimson Vault</title>
-    <link rel="stylesheet" href="Update.css">
+    <link rel="stylesheet" href="Updates.css">
 </head>
 <body >
     <div class="homepage">

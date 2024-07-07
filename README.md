@@ -4,7 +4,7 @@ This is a group project
 done by rajarajeshwari students<br>
 --> Achyuth<br>
 -->Ashwin <br>
--->Bharadwaja<br>
+-->Bharadwaja M<br>
 -->Bhragava kk<br>
 -->Chethan k <br>
 -->Chorotiya Akash<br>

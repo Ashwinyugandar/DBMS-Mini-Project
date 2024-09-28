@@ -1,7 +1,7 @@
 # DBMS-Mini-Project
 DBMS Project done during Engineering<br>
 This is a group project 
-done by rajarajeshwari students<br>
+done by rajarajeshwari college of engineering students<br>
 --> Achyuth<br>
 -->Ashwin <br>
 -->Bharadwaja M<br>
